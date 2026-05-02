@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>بيتك</title>
+  <link href="./css/output.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="./images/logo.png">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+
+
+
+
+<body class="bg-gray-100">
+
+  <!--#region Navbar -->
+  <nav class="fixed right-0 left-0 top-0 py-4 text-[#D6D9E2] shadow border-b border-[#D6D9E2]/90 bg-[#0F2440] z-50">
+    <div class="main-container px-4">
+      <div class="flex justify-between items-center">
+        <div class="item-links font-light flex items-center gap-4">
+          <button id="menuBtn" class="md:hidden text-2xl">☰</button>
+
+          <ul class="hidden md:flex gap-16">
+            <li><a href="#home" class="nav-link">الرئيسية</a></li>
+            <li><a href="#about" class="nav-link">من نحن</a></li>
+            <li><a href="#services" class="nav-link">الخدمات</a></li>
+            <li><a href="#contact" class="nav-link">اتصل بنا</a></li>
+          </ul>
+        </div>
+
+        <div class="icon gap-2 flex items-center">
+          <h1 class="text-3xl font-medium">بيتك</h1>
+          <svg class="w-10 h-10 text-[#D6D9E2]" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path d="M22 22L2 22" stroke="#D6D9E2" stroke-width="1.5" stroke-linecap="round"></path>
+              <path
+                d="M2 11L6.06296 7.74968M22 11L13.8741 4.49931C12.7784 3.62279 11.2216 3.62279 10.1259 4.49931L9.34398 5.12486"
+                stroke="#D6D9E2" stroke-width="1.5" stroke-linecap="round"></path>
+              <path d="M15.5 5.5V3.5C15.5 3.22386 15.7239 3 16 3H18.5C18.7761 3 19 3.22386 19 3.5V8.5" stroke="#D6D9E2"
+                stroke-width="1.5" stroke-linecap="round"></path>
+              <path d="M4 22V9.5" stroke="#D6D9E2" stroke-width="1.5" stroke-linecap="round"></path>
+              <path d="M20 9.5V13.5M20 22V17.5" stroke="#D6D9E2" stroke-width="1.5" stroke-linecap="round"></path>
+              <path
+                d="M15 22V17C15 15.5858 15 14.8787 14.5607 14.4393C14.1213 14 13.4142 14 12 14C10.5858 14 9.87868 14 9.43934 14.4393M9 22V17"
+                stroke="#D6D9E2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path
+                d="M14 9.5C14 10.6046 13.1046 11.5 12 11.5C10.8954 11.5 10 10.6046 10 9.5C10 8.39543 10.8954 7.5 12 7.5C13.1046 7.5 14 8.39543 14 9.5Z"
+                stroke="#D6D9E2" stroke-width="1.5"></path>
+            </g>
+          </svg>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div id="mobileMenu"
+    class="md:hidden mt-16 text-[#D6D9E2] max-h-0 overflow-hidden opacity-0 transition-all duration-300 px-4">
+
+    <div class="rounded-2xl border border-white/20 bg-[#102a4d] p-4 shadow-lg">
+      <ul class="flex flex-col gap-3 text-center">
+        <li><a href="#home" class="block px-4 py-2 rounded hover:bg-white/10">الرئيسية</a></li>
+        <li><a href="#about" class="block px-4 py-2 rounded hover:bg-white/10">من نحن</a></li>
+        <li><a href="#services" class="block px-4 py-2 rounded hover:bg-white/10">الخدمات</a></li>
+        <li><a href="#contact" class="block px-4 py-2 rounded hover:bg-white/10">اتصل بنا</a></li>
+      </ul>
+    </div>
+
+  </div>
+  <!--#endregion Navbar -->
+  <!--#region Header -->
+<!--#region Header -->
+<section id="home" class="relative h-screen flex items-center justify-center overflow-hidden">
+  
+  <div class="absolute inset-0 z-0 scale-110 animate-slow-zoom">
+    <div class="absolute inset-0 bg-gradient-to-b from-[#0F2440]/80 via-[#0F2440]/40 to-[#0F2440]"></div>
+    <img src="./images/home.jpg" class="w-full h-full object-cover" alt="Home Background">
+  </div>
+
+  <div class="relative z-10 container mx-auto px-6 text-center">
+    <div data-aos="zoom-in" data-aos-duration="1000" class="max-w-4xl mx-auto backdrop-blur-xs bg-white/5 border border-white/10 p-8 md:p-16 rounded-[2rem] shadow-2xl transform transition-all hover:scale-[1.02] duration-500">
+      
+      <span class="inline-block px-4 py-1 mb-6 text-sm font-light tracking-widest text-[#D6D9E2] border border-[#D6D9E2]/30 rounded-full bg-white/5">
+        مرحباً بك في مستقبل العقارات
+      </span>
+
+      <h1 class="text-4xl md:text-7xl font-bold text-white leading-tight mb-8">
+        اعثر على <span class="text-[#0F2440]">بيت أحلامك</span> بسهولة واحترافية
+      </h1>
+      
+      <p class="text-lg md:text-xl text-[#D6D9E2]/80 mb-10 font-light max-w-2xl mx-auto">
+        نوفر لك أفضل الوحدات السكنية في أرقى المناطق وبأسعار تنافسية تناسب تطلعاتك.
+      </p>
+
+      <div class="flex flex-col md:flex-row gap-4 justify-center">
+        <a href="#services" class="px-10 py-4 bg-[#D6D9E2] text-[#0F2440] font-bold rounded-full hover:bg-white transition-all shadow-lg shadow-blue-500/20">
+          احجز المعاينة الآن
+        </a>
+        <a href="#about" class="px-10 py-4 border border-white/30 text-white rounded-full hover:bg-white/10 transition-all">
+          اكتشف المزيد
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+    <svg class="w-6 h-6 text-white/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+    </svg>
+  </div>
+</section>
+<!--#endregion Header -->  
+
+  <!--#region About -->
+  <section id="about" class="relative my-24 text-[#D6D9E2] overflow-hidden">
+  
+  <div class="absolute -top-10 -right-10 w-64 h-64 bg-[#0F2440]/30 rounded-full blur-3xl opacity-50 z-0"></div>
+
+  <div class="main-container relative z-10 px-4 md:px-8">
+    
+    <div data-aos="fade-up" class="text-center mb-16">
+      <h1 class="text-5xl font-extrabold text-white tracking-tight relative inline-block">
+        من نحن
+        <span class="absolute -bottom-3 left-1/2 -translate-x-1/2 w-24 h-1.5 bg-[#D6D9E2] rounded-full"></span>
+      </h1>
+      <p class="mt-6 text-xl text-[#D6D9E2]/80 max-w-2xl mx-auto font-light">
+        قصة نجاحنا بدأت برؤية واضحة، واليوم نحن نقود الطريق في عالم العقارات.
+      </p>
+    </div>
+
+    <div class="flex flex-col md:flex-row justify-between items-center gap-24 lg:gap-20">
+      
+      <div data-aos="fade-left" class="img-container relative group flex-shrink-0">
+        <div class="absolute -inset-2 bg-gradient-to-r from-[#D6D9E2] to-[#0F2440] rounded-3xl opacity-0 group-hover:opacity-100 blur-xl transition-all duration-500 z-0"></div>
+        
+        <img class="relative rounded-3xl h-[400px] w-full md:w-[450px] object-cover shadow-2xl border-4 border-white/10 transition-transform duration-500 group-hover:scale-[1.03] z-10" 
+             src="./images/about.png" 
+             alt="فريق عمل شركة العقارات">
+        
+        <div class="absolute bottom-6 right-6 bg-[#0F2440] p-4 rounded-full shadow-lg border border-white/20 z-20 transition-all duration-300 group-hover:rotate-12 group-hover:bg-[#D6D9E2] group-hover:text-[#0F2440]">
+            <svg class="w-8 h-8 text-[#D6D9E2] group-hover:text-[#0F2440]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+      </div>
+
+      <div data-aos="fade-right" class="text-content flex-1 text-center md:text-right">
+        <h3 class="text-4xl font-bold text-white leading-snug tracking-wide">
+          نحن شركة عقارات بنقدم <br class="hidden md:block">
+          أفضل الخيارات <span class="text-[#D6D9E2] relative inline-block">السكنية<span class="absolute bottom-1 left-0 w-full h-0.5 bg-[#D6D9E2] opacity-50"></span></span> والاستثمارية
+        </h3>
+        
+        <p class="mt-8 text-2xl font-medium text-[#D6D9E2]/90 leading-relaxed italic border-r-4 border-[#D6D9E2] pr-6">
+          بخبرة <span class="font-bold text-white">وثقة</span>، نبني مستقبلك العقاري خطوة بخطوة.
+        </p>
+
+        <div class="mt-12 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+            <a href="#services" class="px-8 py-4 bg-[#D6D9E2] text-[#0F2440] font-bold rounded-xl text-center shadow-lg transition-all duration-300 hover:bg-white hover:-translate-y-1">
+                استكشف خياراتنا
+            </a>
+            <a href="#contact" class="px-8 py-4 border-2 border-[#D6D9E2]/30 text-[#D6D9E2] font-semibold rounded-xl text-center transition-all duration-300 hover:bg-[#D6D9E2]/10 hover:border-[#D6D9E2]">
+                تحدث مع خبير
+            </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+  <!--#endregion About -->
+
+ <!--#region Services -->
+<section id="services" class="py-24 bg-[#0F2440]/30">
+  <div class="main-container px-4">
+    <div data-aos="fade-up" class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-white mb-4">خدماتنا</h2>
+      <div class="w-20 h-1 bg-[#D6D9E2] mx-auto rounded-full"></div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <div data-aos="fade-up" data-aos-delay="100" class="group p-8 rounded-3xl bg-[#102a4d] border border-white/5 hover:border-[#D6D9E2]/30 transition-all duration-300 hover:-translate-y-2 shadow-xl">
+        <div class="w-16 h-16 bg-[#D6D9E2]/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-[#D6D9E2] transition-colors">
+          <svg class="w-8 h-8 text-[#D6D9E2] group-hover:text-[#0F2440]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+        </div>
+        <h3 class="text-2xl font-bold text-white mb-4">بيع وشراء العقارات</h3>
+        <p class="text-[#D6D9E2]/70 leading-relaxed">نساعدك في إيجاد العقار المثالي أو بيع وحدتك بأفضل سعر في السوق العقاري.</p>
+      </div>
+
+      <div data-aos="fade-up" data-aos-delay="200" class="group p-8 rounded-3xl bg-[#102a4d] border border-white/5 hover:border-[#D6D9E2]/30 transition-all duration-300 hover:-translate-y-2 shadow-xl">
+        <div class="w-16 h-16 bg-[#D6D9E2]/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-[#D6D9E2] transition-colors">
+          <svg class="w-8 h-8 text-[#D6D9E2] group-hover:text-[#0F2440]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+        </div>
+        <h3 class="text-2xl font-bold text-white mb-4">تأجير الوحدات</h3>
+        <p class="text-[#D6D9E2]/70 leading-relaxed">خيارات متنوعة للإيجار السكني والتجاري تناسب جميع الاحتياجات والميزانيات.</p>
+      </div>
+
+      <div data-aos="fade-up" data-aos-delay="300" class="group p-8 rounded-3xl bg-[#102a4d] border border-white/5 hover:border-[#D6D9E2]/30 transition-all duration-300 hover:-translate-y-2 shadow-xl">
+        <div class="w-16 h-16 bg-[#D6D9E2]/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-[#D6D9E2] transition-colors">
+          <svg class="w-8 h-8 text-[#D6D9E2] group-hover:text-[#0F2440]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+        </div>
+        <h3 class="text-2xl font-bold text-white mb-4">استشارات عقارية</h3>
+        <p class="text-[#D6D9E2]/70 leading-relaxed">نقدم لك تحليلات دقيقة للسوق ونصائح استثمارية تضمن لك أفضل عائد على المدى الطويل.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!--#endregion Services -->
+
+  <!--#region CONTACT -->
+<section id="contact" class="py-24 relative overflow-hidden">
+  <div class="main-container px-4">
+    <div data-aos="zoom-in-up" class="max-w-3xl mx-auto backdrop-blur-md bg-white/5 border border-white/10 p-10 md:p-16 rounded-[2.5rem] shadow-2xl">
+      
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold text-white mb-4">تواصل معنا</h2>
+        <p class="text-[#D6D9E2]/60">نحن هنا للإجابة على جميع استفساراتك ومساعدتك في اختيار بيتك القادم.</p>
+      </div>
+
+      <form action="#" class="space-y-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <label class="block text-sm font-light text-[#D6D9E2] mb-2 mr-2">الاسم بالكامل</label>
+            <input type="text" placeholder="مثال: أحمد محمد" class="w-full bg-[#0F2440]/50 border border-white/10 rounded-2xl px-6 py-4 text-white focus:outline-none focus:border-[#D6D9E2] transition-all">
+          </div>
+          <div>
+            <label class="block text-sm font-light text-[#D6D9E2] mb-2 mr-2">رقم الهاتف</label>
+            <input type="tel" placeholder="01xxxxxxxxx" class="w-full bg-[#0F2440]/50 border border-white/10 rounded-2xl px-6 py-4 text-white focus:outline-none focus:border-[#D6D9E2] transition-all text-right">
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-sm font-light text-[#D6D9E2] mb-2 mr-2">رسالتك</label>
+          <textarea rows="4" placeholder="كيف يمكننا مساعدتك؟" class="w-full bg-[#0F2440]/50 border border-white/10 rounded-2xl px-6 py-4 text-white focus:outline-none focus:border-[#D6D9E2] transition-all resize-none"></textarea>
+        </div>
+
+        <button type="submit" class="w-full py-4 bg-[#D6D9E2] text-[#0F2440] font-bold rounded-2xl hover:bg-white hover:scale-[1.01] active:scale-95 transition-all shadow-lg shadow-[#D6D9E2]/10">
+          إرسال الرسالة
+        </button>
+      </form>
+
+    </div>
+  </div>
+</section>
+<!--#endregion CONTACT -->
+ <!--#region Footer -->
+<footer class="bg-[#0F2440] text-[#D6D9E2] border-t border-white/10 pt-16 pb-8">
+  <div class="main-container px-4">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12 text-center md:text-right">
+      
+      <div class="flex flex-col items-center md:items-start gap-4">
+        <div class="flex items-center gap-2 mb-2">
+          <h2 class="text-3xl font-bold text-white">بيتك</h2>
+          <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <p class="text-sm leading-relaxed opacity-70 max-w-xs">
+          نحن رائدون في تقديم الحلول العقارية المتكاملة، نجمع بين الخبرة والثقة لنضمن لك ولعائلتك مستقبلًا سكنيًا مستقرًا.
+        </p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold text-white mb-6">روابط سريعة</h3>
+        <ul class="space-y-4 opacity-80">
+          <li><a href="#home" class="hover:text-white transition-colors">الرئيسية</a></li>
+          <li><a href="#about" class="hover:text-white transition-colors">من نحن</a></li>
+          <li><a href="#services" class="hover:text-white transition-colors">الخدمات</a></li>
+          <li><a href="#contact" class="hover:text-white transition-colors">اتصل بنا</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-semibold text-white mb-6">تواصل معنا</h3>
+        <ul class="space-y-4 opacity-80">
+          <li class="flex items-center justify-center md:justify-start gap-3">
+            <span class="text-sm">القاهرة، جمهورية مصر العربية</span>
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          </li>
+          <li class="flex items-center justify-center md:justify-start gap-3">
+            <span class="text-sm">info@beityk.com</span>
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    
+  </div>
+</footer>
+<!--#endregion Footer -->
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    offset: 100,
+    once: false
+  });
+</script>
+
+<script src="./js/index.js">
+</script>
+
+</body>
+
+</html>
